@@ -1,0 +1,149 @@
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+  
+  /* navigation bar */
+  nav a {
+    font-family: "aileron", sans-serif;
+    position: relative;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #a6a1eb;
+    /*Bordercolor*/border-radius: 2em;
+    background: #a6a1eb;
+    z-index: -1;
+    transform: scale(0);
+    /*Starthidden*/transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1); /* Expand border */
+  }
+  
+  nav a:hover::after {
+    width: 100%; /* Expands the line */
+  }
+  
+  nav {
+    flex: 1;
+    text-align: left;
+  }
+  nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+
+/*body*/
+#ingredients-list {
+    margin: 20px;
+    font-family: "aileron", sans-serif;
+    line-height: 1.6;
+  }
+  
+  #ingredients-list h1 {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #ingredients-list ul {
+    text-align: left;
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 20px; /* Indent the list */
+    margin: 0;
+  }
+  
+  #ingredients-list li {
+    margin-bottom: 5px; /* Add space between each item */
+    font-size: 1rem;
+  }
+  /* footer */
+  footer p{
+    text-align: center;
+  }
+  /* General body styling */
+  body {
+    font-family: "aileron", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/background2.svg"); /* Replace with your actual image path */
+    background-attachment: fixed; /* Creates the parallax effect */
+    background-size: cover; /* Ensures the background covers the viewport */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    color: #000000;
+  }
+
+  /* ingredients list styling*/
+
+  .ingredients-list h1 {
+    text-align: left;;
+    font-size: 2.5rem; /* Makes the text big */
+    font-weight: bold; /* Makes the text bold */
+    margin-bottom: 0.5em; /* Adds some space below the h1 */
+    color: #333; /* Optional: Dark text color */
+  }
+  
+  /* Styling for the p element */
+  .ingredients-list p {
+    font-size: 1rem; /* Default size for normal text */
+    font-weight: normal; /* Normal text weight */
+    margin-top: 0; /* Removes unnecessary top margin */
+    color: black; /* Optional: Slightly lighter text color */
+  }
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+      max-height: 0; 
+    }
+  
+    nav ul li {
+      display: block;
+      text-align: right; 
+      padding-right: 50px; 
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      color: #fff;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
