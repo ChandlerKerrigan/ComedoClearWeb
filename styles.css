@@ -65,7 +65,7 @@ body {
   font-family: "aileron", sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("Images/background2.svg"); /* Replace with your actual image path */
+  background-image: url("background2.svg"); /* Replace with your actual image path */
   background-attachment: fixed; /* Creates the parallax effect */
   background-size: cover; /* Ensures the background covers the viewport */
   background-position: center; /* Centers the background */
