@@ -26,12 +26,12 @@ nav a::before {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid #a6a1eb;
-  /*Bordercolor*/border-radius: 2em;
-  background: #a6a1eb;
+  border: 2px solid #A3B18A; /* Sage green accent */
+  border-radius: 2em;
+  background: #A3B18A; /* Sage green accent */
   z-index: -1;
   transform: scale(0);
-  /*Starthidden*/transform-origin: center;
+  transform-origin: center;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -65,7 +65,7 @@ body {
   font-family: "aileron", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #9CAF88;
+  background-color: #9CAF88; /* Sage green background */
 }
 #input-section h1 {
   margin-bottom: 0.1em; 
@@ -75,14 +75,13 @@ body {
   margin-top: 0; 
 }
 
-
 main {
   padding: 2em;
   background-color: transparent;
   border-radius: 10px; /* Rounded corners for a modern look */
   margin: 2em auto;
   max-width: 450px; /* Limit the width for better readability */
-
+  text-align: center;
 }
 
 h1{
@@ -114,21 +113,18 @@ header {
   text-align: center;
 }
 
-main {
-  background-color: transparent;
-  text-align: center;
-}
-
 main .input-selection{
   background-color: transparent;
 }
 
-/* Textarea styling */
+/* Textarea styling with modern look */
 textarea {
   width: 100%;
   height: 150px;
   padding: 1em;
   margin-bottom: 1em;
+  border: 3px solid #556B2F; /* Thicker border in a darker green */
+  border-radius: 0.5em; /* Rounded corners for a modern look */
 }
 
 /* Input Section Buttons */
@@ -162,7 +158,7 @@ textarea {
   font-weight: 300;
   letter-spacing: -.24px;
   margin: 0;
-  border: 1px solid #1A1A1A;
+  border: 1px solid #556B2F; /* Updated to darker green */
   padding: 1rem 1.3rem;
   quotes: auto;
   text-decoration: none;
@@ -178,12 +174,8 @@ textarea {
 
 .clear-btn:hover {
   color: white;
-  background-color: #a6a1eb;
+  background-color: #A3B18A; /* Sage green accent */
   transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
 }
 
 .clear-btn:active{
@@ -193,12 +185,12 @@ textarea {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid #a6a1eb;
-  /*Bordercolor*/border-radius: 2em;
-  background: #a6a1eb;
+  border: 2px solid #A3B18A; /* Sage green accent */
+  border-radius: 2em;
+  background: #A3B18A; /* Sage green accent */
   z-index: -1;
   transform: scale(0);
-  /*Starthidden*/transform-origin: center;
+  transform-origin: center;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -217,7 +209,7 @@ textarea {
   font-weight: 300;
   letter-spacing: -.24px;
   margin: 0;
-  border: 1px solid #1A1A1A;
+  border: 1px solid #556B2F; /* Updated to darker green */
   padding: 1rem 1.3rem;
   quotes: auto;
   text-decoration: none;
@@ -233,20 +225,12 @@ textarea {
 
 .analyze-btn:hover {
   color: white;
-  background-color: #a6a1eb;
+  background-color: #A3B18A; /* Sage green accent */
   transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
 }
 
 .analyze-btn:active{
   transform: scale(1.025);
-  -webkit-transform: scale(1.025);
-  -moz-transform: scale(1.025);
-  -ms-transform: scale(1.025);
-  -o-transform: scale(1.025);
 }
 
 @media (min-width: 768px) {
@@ -255,61 +239,51 @@ textarea {
     padding: .75rem 2rem;
   }
 }
+
 /* Results section styling */
 #results-section {
   font-family: "aileron", sans-serif;
-  padding: 5px 10px;
-  width: 100%;
-  height: auto; /* Adjust height to fit content dynamically */
-  margin-top: 25px;
   padding: 1em;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
   margin-bottom: 1em;
-  border: 1px solid #000000;
+  border: 1px solid #556B2F; /* Updated to darker green */
   border-radius: 2em;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
 }
 
 /* Styling for comedogenic and non-comedogenic ingredients */
 .comedogenic {
   font-family: "aileron", sans-serif;
-  font-weight: bold; /* Make comedogenic ingredients bold */
+  font-weight: bold;
   color: #e03caf;
 }
 
 .non-comedogenic {
   font-family: "aileron", sans-serif;
-  font-weight: normal; /* Ensure non-comedogenic ingredients are normal weight */
-  color: black; /* Optional: Highlight non-comedogenic ingredients in green */
+  font-weight: normal;
+  color: black;
 }
 
-/*about*/
-
+/* About section styling */
 .about{
   font-family: "aileron", sans-serif;
-  padding: 5px 10px;
-  width: 100%;
-  height: auto; /* Adjust height to fit content dynamically */
-  margin-top: 25px;
   padding: 1em;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
   margin-bottom: 1em;
-  border: 1px solid #000000;
+  border: 1px solid #556B2F; /* Updated to darker green */
   border-radius: 2em;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
 }
-/*-------media-query-for-max-width-800---------*/
 
+/* Media query for max-width 800px */
 @media only screen and (max-width: 800px) {
   nav ul {
     position: absolute;
     top: 70px;
     left: 0;
-    background: #333;
+    background: #556B2F; /* Updated to darker green */
     width: 100%;
     overflow: hidden;
     transition: max-height 0.5s;
